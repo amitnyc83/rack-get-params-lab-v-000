@@ -1,9 +1,5 @@
 require 'pry'
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 4578a0c6fde6583d074daab7e90af2cc90f4d3f6
 class Application
 
   @@items = ["Apples","Carrots","Pears"]
@@ -24,7 +20,7 @@ class Application
       resp.write "Path Not Found"
     end
 
-<<<<<<< HEAD
+
     if @@cart.empty?
       resp.write "Your cart is empty"
     else
@@ -39,17 +35,17 @@ class Application
       resp.write "added #{req.params["item"]}"
     else
       resp.write "We don't have that item"
-=======
+
     @@cart.each do |cart_item|
       resp.write "#{cart_item}\n"
     end
 
-binding.pry
+
     if @@items.include?(search_term)
       @@carts << search_term
     else
       resp.write "Your cart is empty"
->>>>>>> 4578a0c6fde6583d074daab7e90af2cc90f4d3f6
+
     end
 
 
